@@ -1,0 +1,173 @@
+* {border: none; padding:0px; margin:0px; font-family: Helvetica, Arial;}
+html, body {width:100%;}
+a {color:#428BCA; text-decoration:none;}
+a:hover {color:#226baa; text-decoration:underline;}
+input, textarea, select, button {border:1px solid #999; padding:3px 5px; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; font-size:14px; color:#222;}
+textarea {width:60%; height:200px; max-width:800px;}
+
+/* --------------- Layout --------------- */
+.head {width:100%; height:50px; background:#222; position:fixed;}
+.head .logo {display:block; float:left;}
+.head .logo > img {height:40px; width:auto;}
+.head ul {display:block; float:left; list-style-type:none; height:50px;}
+.head ul li {float:left; height:50px;}
+.head ul li a {font-size:15px; text-decoration:none; padding:15px 20px; color:#999; display:block;}
+.head ul li:hover {background:#000;}
+.head ul li:hover a {color:#ddd;}
+.head2 {width:100%; height:50px; background:rgba(245, 245, 245, 0.88); -moz-box-shadow: 0 0 2px #999999; -webkit-box-shadow: 0 0 2px #999999; box-shadow: 0 0 2px #999999; position:fixed; top:50px;}
+.head2 a {color:#6F0101; text-decoration:none; font-size:18px; line-height:46px;}
+/*
+.head2 a:before {content:""; width:20px; background:rgba(245, 245, 245, 0.99); margin-left:-12px;}
+.head2 a:after {content:" / "; color:#222; width:20px; font-size:20px; font-weight:bold;}
+*/
+.head > .content, .head2 > .content, .footer > .content {width:80%; max-width:1200px; margin:0px auto;}
+
+.main-container {width:80%; max-width:1200px; padding-top:120px; margin:0px auto;}
+.main-container .categories {float:left; width:200px;}
+.main-container .categories ul {list-style-type:none;}
+.main-container .categories ul li a {color:#777; font-size:15px; text-decoration:none;}
+.main-container .categories ul li:hover a {color:#333;}
+.main-container .categories > .title {color:#6F0101; font-size:20px; padding:5px 0px;}
+.main-container .content {float:left; padding:15px; color:#222; font-size:14px; width:970px; min-height:600px;}
+.main-container .content .pages {padding:20px 0px; font-size:16px;}
+.main-container .content .pages a {margin:0px 5px;}
+
+
+.footer {width:100%; padding:15px 0px; background:#333; font-size:14px; color:#fff;}
+.footer a {color:#428BCA; text-decoration:none; }
+.footer a:hover {color:#327BbA; text-decoration:underline;}
+.footer > .content .people, .footer > .content .support, .footer > .content .faposcms {float:left; margin-right:40px;}
+.footer > .content .people > span, .footer > .content .support > span, .footer > .content .faposcms > span {display:block;}
+.footer > .content .networks {float:right; max-width:300px; padding:0px 0px 30px 30px;}
+
+.socnet a {width:35px;height:35px;background: url('../img/socnet.png') no-repeat;display: inline-block;}
+.socnet a.vk {background-position:-837px -34px;}
+.socnet a.twitter {background-position:-40px -34px;}
+.socnet a.fb {background-position:-126px -34px;}
+.socnet a.goplus{background-position:-531px -34px;}
+.socnet a.github{background-position:-800px -34px;}
+.socnet a.youtube{background-position:-295px -34px;}
+.socnet a.skype{background-position:-341px -34px;}
+.socnet a.rss{background-position:0 -34px;}
+
+.socnet a.vk:hover {background-position:-837px 0;}
+.socnet a.twitter:hover {background-position:-40px 0;}
+.socnet a.fb:hover {background-position:-126px 0;}
+.socnet a.goplus:hover {background-position:-531px 0;}
+.socnet a.github:hover {background-position:-800px 0;}
+.socnet a.youtube:hover {background-position:-295px 0;}
+.socnet a.skype:hover {background-position:-341px 0;}
+.socnet a.rss:hover {background-position:0 0;}
+/* --------------- /Layout --------------- */
+
+/* --------------- Content --------------- */
+.material .title {margin:30px 0px 10px 0px;}
+.material .title a {font-size:30px; color:#999; text-decoration:none;}
+.material .title a:hover {color:#5d5d5d;}
+.mod-panel {float:right;}
+.material:first-child .title {margin:0px 0px 10px 0px;}
+.material > .info {color:#bbb; font-size:12px; padding-bottom:10px; margin-top:-10px;}
+.material > .content > .info {padding:5px; margin:10px 0px; font-size:11px; display:inline-block; border:1px solid #ddd; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.material > .content > .info > span {padding-right:20px;}
+.material > .content > .tags {padding-top:20px;}
+.material > .content > .tags a {font-size:10px; color:#999;}
+.material > .content > .tags a:hover {color:#5d5d5d;}
+
+.comment {margin:40px 0px;}
+.comment .avatar {float:left; width:170px;}
+.comment .text {float:left; max-width:800px;}
+.comment .text .name a {font-size:20px; text-decoration:none;}
+.comment .text .name a:hover {text-decoration:underline;}
+.comment .text .info {font-size:10px; color:#999;}
+
+
+h1, h2, h3, h4, h5, h6 {color:#000; margin:40px 0px 10px 0px; font-weight:normal;}
+.material div:first-child+h1, .material h1:first-child {margin-top:0px;}
+h1 {font-size:30px;}
+h2 {font-size:25px;}
+h3 {font-size:20px;}
+h3 {font-size:15px;}
+/* --------------- /Content --------------- */
+
+/* -------------- FAPOS CMS SYSTEM ---- */
+.clear {clear:both;}
+
+.fps-fwin {position:fixed;top:200px;left:30%;}
+.drag_window {z-index:9999; position:absolute;box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000;width:333px;max-width:333px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; background:url('../img/bc_bg_a.png') repeat;}
+.drag_window .fps-title {background:none;cursor:move;height:29px;font-weight:bold;color:#fff;font-family:sans-serif, arial, verdana;font-size:12px;padding-left:9px;line-height:27px;}
+.drag_window .fps-cont {border:1px solid #253439;padding:5px; max-height:400px; overflow:auto; margin:0px 10px 20px 10px; background:#fff;-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+.drag_window .fps-close {background:url(../img/btop_bg_a.png) -335px 0px no-repeat;float:right;width:70px;height:20px;margin-right:-17px;margin-top:-24px;cursor:pointer;}
+.fps-fwin .close:hover {background:url(../img/btop_bg_a.png) -402px 0px no-repeat;}
+.fps-fwin textarea {width:100%;height:50px;}
+.fps-fwin fieldset {margin-top:7px; padding:2px; border:1px solid #FDA03C; font-size:12px;}
+.fps-fwin fieldset legend {font-size:11px;}
+
+.fps-form-red {width:100%; border:1px solid #7F9DB9; border-bottom:none;}
+.fps-form-textarea {overflow:hidden; width:100%; border:1px solid #7F9DB9;}
+.fps-form-textarea textarea {border:none;}
+
+.fps-controll {font-size:12px;}
+.fps-controll input, .fps-controll select {font-size:12px;}
+
+
+.spoiler-open {width:90%; height:20px;  padding: 2px; color:#E57D1C;}
+.spoiler-win {display:none; background:#C8D8FB; width:90%; padding: 5px;}
+
+.aimg {cursor:pointer;}
+.botname {color:#FF0000;}
+
+
+
+.fpsMainMenu {background: url("../img/bgblock2.png") repeat-y;list-style: none outside none;padding: 1px 0 1px 4px;}
+.fpsMainMenu a { background: url("../img/bgm.png") no-repeat;padding: 8px 5px;text-decoration: none;cursor: pointer;display: block;}
+.fpsMainMenu a:hover { background: url("../img/bga.png") no-repeat;}
+.fpsMainMenu li {margin-bottom: 2px;position: relative;width: 226px;}
+.fpsMainMenu li ul {display:none;padding: 4px 19px !important; background:#556266 !important;}
+.fpsMainMenu li ul li {background:none !important; width:auto !important; border-bottom: 1px dashed #384B52;}
+.fpsMainMenu li ul li a {background:none !important;color: #C0C9CD;font-size: 11px;width:100%; padding:3px 0px;}
+
+.fpsMainMenu li:hover ul.fpsMainMenu {display:block;}
+
+/*div.grippie {background:#EEEEEE url('../img/grippie.png') no-repeat scroll center 2px;border-color:#DDDDDD;border-style:solid;border-width:0pt 1px 1px;cursor:s-resize;height:9px;overflow:hidden;}*/
+div.grippie {}
+.resizable-textarea textarea {display:block;margin-bottom:0pt;width:95%;height: 20%;}
+
+.errorMsg {color:#D7630B;}
+ul.errorMsg {list-style: circle inside none; margin-left:20px;}
+.errorMsg li {color:#D7630B;}
+
+a.user-details img, span.user-details img {width:24px; height:24px;}
+.polls {width:90%; margin:0px auto; padding:10px 30px;}
+.poll2 {width:50%; padding:3px; margin:auto;}
+.poll2 .variant {width:50%; margin:auto;}
+.poll {width:90%; margin:auto;}
+.poll .variant, .poll .cnt, .poll .bar, .poll .percentege, .poll2 .variant, .poll2 .cnt {float:left;}
+.poll .variant {width:100px;}
+.poll .cnt {width:25px;}
+.poll .bar {border:1px solid #687A84; height:10px; margin:5px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+    background-image: linear-gradient(left , rgb(0,170,43) 0%, rgb(0,255,0) 100%);
+    background-image: -o-linear-gradient(left , rgb(0,170,43) 0%, rgb(0,255,0) 100%);
+    background-image: -moz-linear-gradient(left , rgb(0,170,43) 0%, rgb(0,255,0) 100%);
+    background-image: -webkit-linear-gradient(left , rgb(0,170,43) 0%, rgb(0,255,0) 100%);
+    background-image: -ms-linear-gradient(left , rgb(0,170,43) 0%, rgb(0,255,0) 100%);
+    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0, rgb(0,170,43)),color-stop(1, rgb(0,255,0))); box-shadow: 0 0 3px #4FFF4F; -moz-box-shadow: 0 0 3px #4FFF4F; -webkit-box-shadow: 0 0 3px #4FFF4F;}
+
+
+.fps-edit, .fps-delete, .fps-add, .fps-up, .fps-down, .fps-star, .fps-ip, .fps-on, .fps-off, .fps-close, .fps-open, .fps-like, .fps-unlike, .fps-fix, .fps-unfix, .fps-premoder-confirm, .fps-premoder-reject {width:14px; height:14px; display:block; float:left; margin:0px 1px; background:url('../img/fps-icons-sprite.png') no-repeat;}
+.fps-delete {background-position:0px 0px;}
+.fps-down {background-position:0px -14px;}
+.fps-up {background-position:0px -28px;}
+.fps-edit {background-position:0px -42px;}
+.fps-close {background-position:0px -56px;}
+.fps-open {background-position:0px -70px;}
+.fps-unfix {background-position:0px -84px;}
+.fps-fix {background-position:0px -98px;}
+.fps-off {background-position:0px -112px;}
+.fps-on {background-position:0px -126px;}
+.fps-star {background-position:0px -140px;}
+.fps-ip {background-position:0px -154px;}
+.fps-like {background-position:0px -168px;}
+.fps-unlike {background-position:0px -182px;}
+.fps-premoder-confirm {background-position:0px -210px;}
+.fps-premoder-reject {background-position:0px -196px;}
+/* ---------- END FAPOS CMS SYSTEM ---- */

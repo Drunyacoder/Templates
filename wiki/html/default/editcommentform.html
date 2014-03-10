@@ -1,0 +1,20 @@
+{{ editor_body }}
+<div class="material">
+	   <form method="POST" id="sendForm" action="{{ form.action }}">
+       <h2>Редактирование комментария</h2>
+	   <div class="mat-content">
+		  {% if fps_user_id == 0 %}
+          <div>
+            <span class="siu_title"><strong><font color="red">*</font>Псевдоним:</strong></span>
+            <span class="siu_data"><input {{ form.disabled }} type="text" name="login" value="{{ form.name }}" /></span>
+          </div>
+		  {% endif %}
+		  <div class="margin" style="overflow:visible;">
+            <textarea {{ editor_text }} name="message">{{ form.message }}</textarea>
+          </div>
+		  <div>
+            <input type="submit" name="send" value="Сохранить" />
+          </div>
+      </div>
+	  </form>
+</div>

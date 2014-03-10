@@ -1,0 +1,21 @@
+{% if commentsr %}
+<div class="material">
+	  <h2>Комментарии</h2>
+	 {% for comment in commentsr %}
+		<div class="comment">
+		   <div class="avatar">{{ comment.add_markers.avatar }}</div>
+			<div class="text">
+				<div class="name">
+					{{ comment.add_markers.name_a }}
+					{% if comment.add_markers.moder_panel %}<div class="mod-panel">{{ comment.add_markers.moder_panel }}</div>{% endif %}
+				</div>
+				<div class="info">
+				   {% if comment.add_markers.editdate %}<span><b>Комментарий был изменён:</b> {{ comment.add_markers.editdate }}</span>{% endif %}<span> {{ AtmGetDate(comment.date) }}</span>
+				</div>
+				{{ comment.add_markers.message }}
+			</div>
+			<div class="clear"></div>
+		</div>
+	 {% endfor %}
+</div>
+{% endif %}

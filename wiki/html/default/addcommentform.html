@@ -1,0 +1,27 @@
+{{ editor_body }}
+<div class="material">
+	   <form method="POST" id="sendForm" action="{{ data.action }}">
+       <h2>Добавление комментария</h2>
+	   <div class="mat-content">
+		  {% if fps_user_id == 0 %}
+          <div>
+            <span class="siu_title"><strong><font color="red">*</font>Псевдоним:</strong></span>
+            <span class="siu_data"><input {{ data.disabled }} type="text" name="login" size="47" value="{{ data.add_comment_name }}" /></span>
+          </div>
+		  {% endif %}
+
+		  <div style="overflow:visible; padding:10px 0px;">
+            <textarea class="comment-ta" id="editor" {{ editor_text }} name="message" >{{ data.add_comment_message }}</textarea>
+          </div>
+		  {% if data.add_comment_captcha %}
+		  <div>
+		    <span style="margin-top:20px; float:left;" class="siu_title"><strong><font color="red">*</font>Код подтверждения:</strong></span>
+            <span class="siu_data" style="max-width: 40%;">{{ data.add_comment_captcha }}</span>
+		  </div> 
+		  {% endif %}
+		  <div>
+            <input type="submit" name="send" value="Отправить" />
+          </div>
+      </div>
+	  </form>
+</div>

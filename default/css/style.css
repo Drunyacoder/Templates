@@ -68,6 +68,14 @@ a:hover {color: #fff;}
     -moz-animation: anim-rotate 1s linear infinite;
     -ms-animation: anim-rotate 1s linear infinite;
 	animation: anim-rotate 1s linear infinite;
+	-webkit-transform-origin: 50% 47% 0;
+	-moz-transform-origin: 50% 47% 0;
+	transform-origin: 50% 47% 0;
+}
+.css3loading {
+	-webkit-transform-origin:52% 64%;
+	-moz-transform-origin:52% 64%;
+	transform-origin:52% 64%;
 }
 
 @keyframes atm-sub-menu {
@@ -655,7 +663,7 @@ box-shadow: inset 0px 0px 1px #999;-webkit-box-shadow: inset 0px 0px 1px #999;-m
 .content .inftitle {margin: 0 10px;padding: 6px 0;font-size: 17px;border-bottom: 1px solid #aaa;}
 .content .infcont {padding: 10px;}
 .content .spisokico {list-style:none;}
-.wysibb-text {width: 100%;min-height: 200px;}
+.wysibb-text {min-height: 200px;}
 .wysibb-text-editor {min-height: 200px !important;}
 .margin {margin:10px;}
 /*--------------------------------------------------------------USERS----------------------------------------------------------------------------*/
@@ -913,7 +921,7 @@ box-shadow: inset 0 0 5px #333;  -webkit-box-shadow: inset 0 0 5px #333;  -moz-b
 .forumblock .forumpost:first-child, #post1 {border:0;}
 .forumblock .forumpost:nth-last-child(2n) {background-color: #f7f7f7;}
 .forumblock .forumhead .forheadpost {height: 10px;}
-.forumblock .poststarterinfo {display: inline-block;width: 150px;min-height: 200px;padding: 10px;vertical-align: top;overflow: hidden;}
+.forumblock .poststarterinfo {display: inline-block; min-width:150px; width:13%; min-height:200px; padding: 10px;vertical-align: top;overflow: hidden;}
   .forumblock .poststarterinfo a.postusername {font-size: 16px;}
   .forumblock .poststarterinfo span.onlinestatus {color: #aaa;font-size: 12px;}
   .forumblock .poststarterinfo ul.basic_info {list-style: none;margin: 5px 0 0;padding: 0;font-size: 11px;color: #5a5a5a;}
@@ -927,7 +935,7 @@ box-shadow: inset 0 0 5px #333;  -webkit-box-shadow: inset 0 0 5px #333;  -moz-b
   .forumblock .poststarterinfo ul.basic_info .postuserzamechanya {margin: 2px 0;}
     .forumblock .poststarterinfo ul.basic_info .userpostrepa a, .forumblock .poststarterinfo ul.basic_info .postuserzamechanya a {color: #484848;font-weight: bold;margin-left: 5px;}
 	.forumblock .poststarterinfo ul.basic_info .userpostrepa .ratingblock a, .forumblock .poststarterinfo ul.basic_info .postuserzamechanya .ratingblock a {margin-left: 0;font-size: 14px;font-weight: normal;text-decoration:none;}
-.forumblock .posttextuser {display: inline-block;width: 80%;min-height: 200px;padding: 10px;vertical-align: top;}
+.forumblock .posttextuser {display: inline-block;width: 84%;min-height: 200px;padding: 10px 0; vertical-align: top;}
 .forumblock .posttextuser .headpostinfo {clear: both;margin-bottom: 8px;font-size: 12px;}
   .forumblock .posttextuser .headpostinfo .postdate{color: #777;}
   .forumblock .posttextuser .headpostinfo .postidlink{float: right;}
@@ -984,6 +992,14 @@ text-decoration:none !important;
 #attachments span input[type=text] {width: 65px;}
 #attachments input {height:auto;}
 #attachments input[type="button"] {width: 195px;}
+
+.codePHP, .codeHTML, .codeSQL, .codeCSS, .codeJS, .bbCodeBlock .codeMessage {background: #ecf2ff;border: 1px solid #D3D3D3 !important;margin: 5px 0;overflow: auto;max-height: 400px;}
+
+.codePHP .numstring {background: #EEE;}
+.codeSQL {padding:5px;}
+.codeCSS {}
+.codeJS {}
+
 /*--------------------------POLLS----------------------------*/
 .poll_question {margin: 10px;display: block !important;height: auto !important;}
 .poll_question h4 {font-weight: normal;background-color: #E0F3CE;margin: 0 -7px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;}
@@ -1183,3 +1199,7 @@ background: rgba(177, 199, 150, 1);
 .urating .moder a {width: 14px;  height: 14px;  margin: 0px 1px;  background: url('../img/fps-icons-sprite.png') no-repeat;  background-position: 0 0;  box-shadow: none;  border: none;  padding: 0;}
 .urating .comm {color:#656565; font-size:12px; padding:2px 2px 5px 2px;clear: both;}
 /*--rating--*/
+
+@media screen and (max-width:1200px) {
+	.forumblock .posttextuser {width:80%;}
+}

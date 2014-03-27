@@ -171,3 +171,28 @@ a.user-details img, span.user-details img {width:24px; height:24px;}
 .fps-premoder-confirm {background-position:0px -210px;}
 .fps-premoder-reject {background-position:0px -196px;}
 /* ---------- END FAPOS CMS SYSTEM ---- */
+
+/*--------------------------POST-CONTENT----------------------------*/
+.bbCodeBlock {}
+.bbCodeBlock .bbCodeName {}
+.bbCodeBlock .codeMessage {padding: 5px;background-color: #FDFDFD;}
+
+.bbQuoteBlock {background: #D7D3C2;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 15px;border: 2px solid #A4BD93;margin: 10px 0;}
+.bbQuoteBlock .bbQuoteName {border-bottom: 2px solid #A4BD93;background: #D8DBBD;padding: 4px;border-radius: 10px;}
+.bbQuoteBlock .quoteMessage {padding: 5px;}
+
+.spoiler-open {border-bottom: 1px solid #BEBEBE;margin: 10px 0;clear: both;}
+.spoiler-open  input {color: #333 !important;text-shadow: none !important;font-size: 9px;margin: 0;}
+.spoiler-win {display: none;border: 1px inset #BDBDBD;padding: 5px;margin: -10px 0 10px 0;background-color: #FDFDFD;}
+
+#attachments {margin-top:10px;}
+#attachments span input[type=text] {width: 65px;}
+#attachments input {height:auto;}
+#attachments input[type="button"] {width: 195px;}
+
+.codePHP, .codeHTML, .codeSQL, .codeCSS, .codeJS, .bbCodeBlock .codeMessage {background: #f5f5f5;border: 1px solid #ccc !important;margin: 10px 0;overflow: auto;max-height: 400px; padding:15px;}
+
+.codePHP .numstring {background: #EEE;}
+.codeSQL {padding:5px;}
+.codeCSS {}
+.codeJS {}

@@ -1,4 +1,6 @@
-* {border: none; padding:0px; margin:0px; font-family: Helvetica, Arial;}
+html, body, iframe,
+h1, h2, h3, h4, h5, h6, p,
+dl, dt, dd, ol, ul, li {border: none; padding:0px; margin:0px; font-family: Helvetica, Arial;}
 html, body {width:100%;}
 a {color:#428BCA; text-decoration:none;}
 a:hover {color:#226baa; text-decoration:underline;}
@@ -28,7 +30,7 @@ textarea {width:60%; height:200px; max-width:800px;}
 .main-container .categories ul li a {color:#777; font-size:15px; text-decoration:none;}
 .main-container .categories ul li:hover a {color:#333;}
 .main-container .categories > .title {color:#6F0101; font-size:20px; padding:5px 0px;}
-.main-container .content {float:left; padding:15px; color:#222; font-size:14px; width:970px; min-height:600px;}
+.main-container .content {float:left; padding:15px; color:#222; font-size:14px; width:970px; min-height:600px; line-height: 160%;}
 .main-container .content .pages {padding:20px 0px; font-size:16px;}
 .main-container .content .pages a {margin:0px 5px;}
 
